@@ -12,13 +12,13 @@ import org.junit.jupiter.api.Test;
 public class OrderServiceTest {
 
     MemberService memberService;
-    OrderSerVice orderSerVice;
+    OrderService orderSerVice;
 
     @BeforeEach
     public void beforeEach() {
         AppConfig appConfig = new AppConfig();
         memberService = appConfig.memberService();
-        orderSerVice = appConfig.orderSerVice();
+        orderSerVice = appConfig.orderService();
     }
 
     @Test
