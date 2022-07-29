@@ -11,7 +11,7 @@ import hello.core.order.OrderServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+@Configuration  // 이걸 해야 싱글톤을 보장한다.
 public class AppConfig {
 // @Bean 을 하면 메소드들이 스프링 컨테이너라는 곳에 등록이 된다.
 
